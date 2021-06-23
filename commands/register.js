@@ -38,6 +38,7 @@ module.exports.run = async (client, message, args) => {
             { name: 'Sweats (1.5+kd)', minimumKd: 1.5 },
             { name: 'Mega Sweats (2+kd)', minimumKd: 2.0 },
             { name: 'Hyper Sweats (2.5+kd)', minimumKd: 2.5 },
+            { name: 'Ultra Sweats (3+kd)', minimumKd: 3.0 },
         ];
 
         const roleToAsign = roles.reduce((carry, role) => kdRatio >= role.minimumKd ? role : carry, null)
