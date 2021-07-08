@@ -44,7 +44,7 @@ module.exports.run = async (client, message, args) => {
         const roleToAsign = roles.reduce((carry, role) => kdRatio >= role.minimumKd ? role : carry, null)
 
         if (! roleToAsign) {
-            await message.channel.send(`Hey ${message.member.displayName}. You're KD is too low to get a server role.`)
+            await message.channel.send(`Hey ${message.member.displayName}. Your KD is too low to get a server role.`)
         }
 
         for (role of roles) {
